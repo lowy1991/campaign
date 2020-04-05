@@ -10,6 +10,7 @@ function update() {
 		for (j = 1; j <= maxColumn; j++) {
 			if (tilesCompleted > 0) {
 				$(`#row-${i}-col-${j}`).css('filter', 'grayscale(0%)');
+				$(`#row-${i}-col-${j}`).css('opacity', '1.0');
 				tilesCompleted--;
 			}
 		}
@@ -22,6 +23,7 @@ function loadPicture() {
 		for (j = 1; j <= maxColumn; j++) {
 			$(`#row-${i}`).append(`<img src="static/img/row-${i}-col-${j}.jpg" class="tile" id="row-${i}-col-${j}"/>`);
 			$(`#row-${i}-col-${j}`).css('filter', 'grayscale(100%)');
+			$(`#row-${i}-col-${j}`).css('opacity', '0.1');
 		}
 	}
 }
