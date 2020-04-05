@@ -5,9 +5,7 @@ function loadPicture() {
 		$('#chart').append(`<div id="row-${i}"></div>`)
 		for (j = 1; j <= maxColumn; j++) {
 			$(`#row-${i}`).append(`<img src="static/img/row-${i}-col-${j}.jpg" class="tile" id="row-${i}-col-${j}"/>`);
-			if (j <= 5) {
-				$(`#row-${i}-col-${j}`).css('filter', 'grayscale(100%)');
-			}
+			$(`#row-${i}-col-${j}`).css('filter', 'grayscale(100%)');
 		}
 	}
 }
