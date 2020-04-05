@@ -1,10 +1,10 @@
-var hoursCompleted	= 5500; 
+var hoursCompleted	= 5509; 
 var maxColumn		= 20;
 var maxRow			= 100;
 
 function loadPicture() {
 	var rate			= 10;
-	var tilesCompleted	= hoursCompleted/rate;
+	var tilesCompleted	= Math.floor(hoursCompleted/rate);
 	$('#hours').text(hoursCompleted);
 	rowloop:
 	for (i = 1; i <=maxRow; i++) {
