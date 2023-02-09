@@ -1,6 +1,6 @@
-var hoursCompleted	= 200000; 
-var maxColumn		= 200;
-var maxRow			= 1000;
+var hoursCompleted	= 10000; 
+var maxColumn		= 20;
+var maxRow			= 100;
 
 function loadPicture() {
 	var rate			= 10;
